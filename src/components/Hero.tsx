@@ -8,7 +8,6 @@ import {
   FolderGit2,
   Award,
   FileText,
-  CheckCircle2,
 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 import { CyberBotCompanion } from './CyberBotCompanion';
@@ -126,7 +125,7 @@ export const Hero: React.FC = () => {
         </motion.div>
 
         {/* Analytics Impact Telemetry Bar */}
-        <div className="pt-6 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-3.5 shadow-sm hover:border-[#00E5FF]/40 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-[#00E5FF]/10 border border-[#00E5FF]/20 flex items-center justify-center shrink-0">
               <FolderGit2 className="w-5 h-5 text-[#00E5FF]" />
@@ -147,18 +146,6 @@ export const Hero: React.FC = () => {
               <span className="text-sm sm:text-base font-bold font-mono text-white block">Research Paper</span>
               <span className="text-xs text-gray-400 font-mono">
                 Presented at <span className="text-[#00E5FF] font-semibold">ICCI 2025</span>
-              </span>
-            </div>
-          </div>
-
-          <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-3.5 shadow-sm hover:border-[#00E5FF]/40 transition-colors">
-            <div className="w-10 h-10 rounded-lg bg-[#00E5FF]/10 border border-[#00E5FF]/20 flex items-center justify-center shrink-0">
-              <CheckCircle2 className="w-5 h-5 text-[#00E5FF]" />
-            </div>
-            <div>
-              <span className="text-sm sm:text-base font-bold font-mono text-white block">Certification</span>
-              <span className="text-xs text-gray-400 font-mono">
-                <span className="text-[#00E5FF] font-semibold">Google</span> Data Analytics
               </span>
             </div>
           </div>
