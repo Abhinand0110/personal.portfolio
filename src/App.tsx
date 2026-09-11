@@ -8,6 +8,7 @@ import { ExperienceEducation } from './components/ExperienceEducation';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { GlobalBackgroundAnimation } from './components/GlobalBackgroundAnimation';
+import { MinimalMouseEffect } from './components/MinimalMouseEffect';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -38,6 +39,9 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col selection:bg-[#00E5FF]/20 selection:text-[#00E5FF] relative">
       {/* Global Full-Page Ambient Tech & Data Animation Canvas */}
       <GlobalBackgroundAnimation />
+
+      {/* Minimalist Ambient Mouse Hover & Trail Animation */}
+      <MinimalMouseEffect />
 
       {/* Sticky Navigation */}
       <Navbar activeSection={activeSection} />
